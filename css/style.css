@@ -1,0 +1,95 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box;
+  font-size: 1.6rem; }
+
+body {
+  font-family: Lato, sans-serif;
+  font-weight: 400;
+  line-height: 1.6; }
+
+.u-center-text {
+  text-align: center !important; }
+
+.u-margin-top-small {
+  margin-top: 1.5rem !important; }
+
+.u-margin-top-medium {
+  margin-top: 4rem !important; }
+
+.u-margin-top-laarge {
+  margin-top: 8rem !important; }
+
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem !important; }
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem !important; }
+
+.u-margin-bottom-laarge {
+  margin-bottom: 8rem !important; }
+
+.main-container {
+  display: flex; }
+
+.main {
+  background-color: orangered;
+  flex: 1; }
+
+.sidebar-navigation {
+  position: fixed;
+  width: 28rem;
+  height: 100%;
+  background-color: #1E2027; }
+  .sidebar-navigation .side-nav {
+    list-style-type: none;
+    margin: 64px 0;
+    padding: 0;
+    color: #fff; }
+    .sidebar-navigation .side-nav__li {
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 15px;
+      font-weight: 600; }
+    .sidebar-navigation .side-nav > li {
+      padding: 16px 5.2rem; }
+      .sidebar-navigation .side-nav > li .side-nav__icon {
+        position: absolute;
+        left: 12px;
+        color: #414655; }
+      .sidebar-navigation .side-nav > li:hover, .sidebar-navigation .side-nav > li:active, .sidebar-navigation .side-nav > li:focus {
+        background-color: #292c35;
+        cursor: pointer; }
+        .sidebar-navigation .side-nav > li:hover .hidden, .sidebar-navigation .side-nav > li:active .hidden, .sidebar-navigation .side-nav > li:focus .hidden {
+          width: 22.8rem; }
+
+.hidden {
+  width: 0;
+  height: 100%;
+  padding: 64px 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  overflow: hidden;
+  list-style-type: none;
+  background-color: #292c35;
+  transition: all .3s; }
+  .hidden li {
+    padding: 16px 24px; }
+    .hidden li:hover, .hidden li:active, .hidden li:focus {
+      background-color: #323541; }
+
+.side-nav__icon {
+  height: 1.8rem;
+  width: 1.8rem;
+  fill: white; }
