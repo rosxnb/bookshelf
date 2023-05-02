@@ -1,0 +1,15 @@
+{
+  "name": "bookshelf",
+  "version": "1.0.0",
+  "description": "An online platform sharing book among the fellow people",
+  "main": "index.js",
+  "scripts": {
+    "compile:scss": "node-sass scss/main.scss css/style.css",
+    "watch:scss": "node-sass -w scss/main.scss css/style.css"
+  },
+  "author": "rosxnb",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^8.0.0"
+  }
+}
