@@ -1,12 +1,9 @@
-@import "abstracts/functions";
-@import "abstracts/mixins";
-@import "abstracts/variables";
-
-@import "base/animations";
-@import "base/base";
-@import "base/typography";
-@import "base/utilities";
-
-@import "layouts/base-container.scss";
-@import "layouts/content.scss";
-@import "layouts/navigation.scss";
+@import "base";
+@import "mixins";
+@import "homepage";
+@import "sidebar";
+@import "header";
+@import "search";
+@import "context";
+@import "content";
+@import "footer";

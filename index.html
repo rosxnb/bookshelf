@@ -1,48 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,300i" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Kitabs</title>
+  <link rel="stylesheet" href="scss/main.scss">
+</head>
 
-        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
-        <link rel="stylesheet" href="css/style.css">
+<body>
+<div class="homepage">
+  <aside class="sidebar">
+    <nav class="sidebar__navigation">
+      <ul class="navigation__list">
+        <li class="navigation__item">
+          <svg class="navigation__icon">
+            <use xlink:href="img/sprite.svg#icon-open-book"></use>
+          </svg>
+          <span class="navigation__text">nav-opt-1</span>
+          <ul class="navigation__item--collapse">
+            <li><span class="navigation__text">1-a</span></li>
+            <li><span class="navigation__text">1-b</span></li>
+            <li><span class="navigation__text">1-c</span></li>
+            <li><span class="navigation__text">1-d</span></li>
+          </ul>
+        </li>
 
-        <title>BookShelf &mdash; Help a fellow reader</title>
-    </head>
+        <li class="navigation__item">
+          <svg class="navigation__icon">
+            <use xlink:href="img/sprite.svg#icon-warning"></use>
+          </svg>
+          <span class="navigation__text">nav-opt-2</span>
+          <ul class="navigation__item--collapse">
+            <li><span class="navigation__text">2-a</span></li>
+            <li><span class="navigation__text">2-b</span></li>
+            <li><span class="navigation__text">2-c</span></li>
+            <li><span class="navigation__text">2-d</span></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </aside>
 
-    <body>
-        <nav class="sidebar-navigation">
-            <ul class="side-nav">
-                <li class="side-nav__item">
-                    <svg class="side-nav__icon">
-                        <use xlink:href="img/sprite.svg#icon-open-book"></use>
-                    </svg>
-                    nav-opt-1
+  <header class="header">
+    <form action="" class="search__container">
+      <label class="search__box">
+        <input type="search" class="search__input" placeholder="Search..." required>
+      </label>
+      <svg class="search__icon">
+        <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
+      </svg>
+    </form>
+  </header>
 
-                    <ul class="hidden">
-                        <li>1-a</li>
-                        <li>1-b</li>
-                        <li>1-c</li>
-                        <li>1-d</li>
-                    </ul>
-                </li>
+  <main class="context">
+    <div class="content__container">
+      <img src="img/cpp_thumbnail.jpg"
+           alt="C++ for beginners" class="content__image">
+      <h2 class="content__heading">C++ for Beginners</h2>
+      <p class="content__description">
+        This covers the classic C++ introduction and also introduces the reader to the programming with C++.
+        This covers the classic C++ introduction and also introduces the reader to the programming with C++.
+        This covers the classic C++ introduction and also introduces the reader to the programming with C++.
+      </p>
+    </div>
+    <div class="content__container">
+      <img src="img/cpp_thumbnail.jpg"
+           alt="C++ for beginners" class="content__image">
+      <h2 class="content__heading">C++ for Beginners</h2>
+      <p class="content__description">
+        This covers the classic C++ introduction and also introduces the reader to the programming with C++.
+        This covers the classic C++ introduction and also introduces the reader to the programming with C++.
+        This covers the classic C++ introduction and also introduces the reader to the programming with C++.
+      </p>
+    </div>
+    <div class="content__container">
+      <img src="img/cpp_thumbnail.jpg"
+           alt="C++ for beginners" class="content__image">
+      <h2 class="content__heading">C++ for Beginners</h2>
+      <p class="content__description">
+        This covers the classic C++ introduction and also introduces the reader to the programming with C++.
+        This covers the classic C++ introduction and also introduces the reader to the programming with C++.
+        This covers the classic C++ introduction and also introduces the reader to the programming with C++.
+      </p>
+    </div>
+    <div class="content__container">
+      <img src="img/cpp_thumbnail.jpg"
+           alt="C++ for beginners" class="content__image">
+      <h2 class="content__heading">C++ for Beginners</h2>
+      <p class="content__description">
+        This covers the classic C++ introduction and also introduces the reader to the programming with C++.
+        This covers the classic C++ introduction and also introduces the reader to the programming with C++.
+        This covers the classic C++ introduction and also introduces the reader to the programming with C++.
+      </p>
+    </div>
+    <div class="content__container">
+      <img src="img/cpp_thumbnail.jpg"
+           alt="C++ for beginners" class="content__image">
+      <h2 class="content__heading">C++ for Beginners</h2>
+      <p class="content__description">
+        This covers the classic C++ introduction and also introduces the reader to the programming with C++.
+        This covers the classic C++ introduction and also introduces the reader to the programming with C++.
+        This covers the classic C++ introduction and also introduces the reader to the programming with C++.
+      </p>
+    </div>
+  </main>
 
+  <footer class="footer">
+    footer
+  </footer>
 
-                <li class="side-nav__item">
-                    <svg class="side-nav__icon">
-                        <use xlink:href="img/sprite.svg#icon-warning"></use>
-                    </svg>
-                    nav-opt-1
-
-                    <ul class="hidden">
-                        <li>2-a</li>
-                        <li>2-b</li>
-                        <li>2-c</li>
-                        <li>2-d</li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-
-    </body>
+  <script src="sidebar.js"></script>
+</div>
+</body>
 </html>

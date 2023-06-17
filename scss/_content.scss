@@ -1,0 +1,28 @@
+.content {
+  &__container {
+    background-color: $color-grey-light-1;
+    display: flex;
+    flex-direction: column;
+    border: 3px solid black;
+    width: 25%;
+    padding: 3rem 5rem;
+    text-align: center;
+  }
+
+  &__image {
+    display: inline-block;
+    width: 90%;
+  }
+
+  &__heading {
+    font-family: "sans-serif";
+    font-weight: 800;
+    text-transform: capitalize;
+  }
+
+  &__description {
+    font-family: "sans-serif";
+    font-weight: 400;
+    text-align: left;
+  }
+}
