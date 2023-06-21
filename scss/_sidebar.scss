@@ -2,6 +2,7 @@
   background-color: $color-primary;
   grid-area: side;
   padding-left: 2rem;
+  box-sizing: border-box;
   position: relative;
 }
 
@@ -16,6 +17,7 @@
 
     &:hover, &:active, &:focus {
       cursor: pointer;
+      background-color: lighten($color-primary-dark, .1);
       .navigation__item--collapse {
         visibility: visible;
         opacity: 1;
@@ -48,7 +50,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    background-color: #423330;
+    background-color: lighten($color-primary-dark, 0.7);
     z-index: 10;
     padding: .5rem 1rem;
     visibility: hidden;

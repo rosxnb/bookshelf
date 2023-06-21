@@ -32,6 +32,7 @@ body {
   background-color: #c69963;
   grid-area: side;
   padding-left: 2rem;
+  box-sizing: border-box;
   position: relative; }
 
 .navigation__list {
@@ -41,7 +42,8 @@ body {
   margin: 1.5rem 0;
   width: 20rem; }
   .navigation__item:hover, .navigation__item:active, .navigation__item:focus {
-    cursor: pointer; }
+    cursor: pointer;
+    background-color: #b28451; }
     .navigation__item:hover .navigation__item--collapse, .navigation__item:active .navigation__item--collapse, .navigation__item:focus .navigation__item--collapse {
       visibility: visible;
       opacity: 1;
@@ -69,7 +71,7 @@ body {
   position: absolute;
   top: 0;
   right: 0;
-  background-color: #423330;
+  background-color: #b38653;
   z-index: 10;
   padding: .5rem 1rem;
   visibility: hidden;
@@ -277,10 +279,22 @@ body {
 
 .recommendation__book {
   width: fit-content;
-  height: fit-content; }
+  height: fit-content;
+  position: relative; }
   .recommendation__book:hover {
     cursor: pointer;
     transform: translateY(-1rem); }
+    .recommendation__book:hover .cart__icon {
+      display: block; }
+
+.cart__icon {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 2rem;
+  height: 2rem;
+  fill: #B2D210FF;
+  display: none; }
 
 .book__img {
   width: 15rem;

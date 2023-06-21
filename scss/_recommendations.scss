@@ -17,12 +17,27 @@
   &__book {
     width: fit-content;
     height: fit-content;
+    position: relative;
 
     &:hover {
       cursor: pointer;
       transform: translateY(-1rem);
+
+      & .cart__icon {
+        display: block;
+      }
     }
   }
+}
+
+.cart__icon {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 2rem;
+  height: 2rem;
+  fill: #B2D210FF;
+  display: none;
 }
 
 .book {
