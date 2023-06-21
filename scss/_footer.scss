@@ -1,4 +1,29 @@
 .footer {
-  background-color: $color-grey-light-1;
+  background-color: $color-primary-dark;
   grid-area: foot;
+  padding: 2rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.contact__container {
+  margin-left: 30rem;
+
+  .contact {
+    text-align: center;
+    color: $color-grey-light-1;
+    font-size: 1.8rem;
+    font-weight: 600;
+    font-family: sans-serif;
+  }
+
+  & ul {
+    color: $color-grey-light-1;
+    list-style-type: none;
+    font-size: 1.6rem;
+    font-weight: 400;
+    font-family: sans-serif;
+    text-transform: lowercase;
+  }
 }

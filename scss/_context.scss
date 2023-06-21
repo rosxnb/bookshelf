@@ -4,5 +4,7 @@
   grid-area: main;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   background-color: $color-grey-dark-1;
+  position: relative;
 }

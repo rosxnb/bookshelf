@@ -1,4 +1,7 @@
 .header {
   background-color: $color-primary-dark;
   grid-area: head;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }

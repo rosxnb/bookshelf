@@ -17,12 +17,12 @@
           <svg class="navigation__icon">
             <use xlink:href="img/sprite.svg#icon-open-book"></use>
           </svg>
-          <span class="navigation__text">nav-opt-1</span>
+          <span class="navigation__text">Read List</span>
           <ul class="navigation__item--collapse">
-            <li><span class="navigation__text">1-a</span></li>
-            <li><span class="navigation__text">1-b</span></li>
-            <li><span class="navigation__text">1-c</span></li>
-            <li><span class="navigation__text">1-d</span></li>
+            <li><span class="navigation__text">Generic</span></li>
+            <li><span class="navigation__text">Fictional</span></li>
+            <li><span class="navigation__text">Fantasy</span></li>
+            <li><span class="navigation__text">Knowledgeable</span></li>
           </ul>
         </li>
 
@@ -30,12 +30,10 @@
           <svg class="navigation__icon">
             <use xlink:href="img/sprite.svg#icon-warning"></use>
           </svg>
-          <span class="navigation__text">nav-opt-2</span>
+          <span class="navigation__text">Watch List</span>
           <ul class="navigation__item--collapse">
-            <li><span class="navigation__text">2-a</span></li>
-            <li><span class="navigation__text">2-b</span></li>
-            <li><span class="navigation__text">2-c</span></li>
-            <li><span class="navigation__text">2-d</span></li>
+            <li><span class="navigation__text">Posts</span></li>
+            <li><span class="navigation__text">Books</span></li>
           </ul>
         </li>
       </ul>
@@ -43,6 +41,11 @@
   </aside>
 
   <header class="header">
+    <div class="logo__container">
+      <img src="img/bookshelf.png" alt="company-logo" class="logo__icon">
+      <h2 class="logo__text">Bookshelf</h2>
+    </div>
+
     <form action="" class="search__container">
       <label class="search__box">
         <input type="search" class="search__input" placeholder="Search..." required>
@@ -54,63 +57,126 @@
   </header>
 
   <main class="context">
-    <div class="content__container">
-      <img src="img/cpp_thumbnail.jpg"
-           alt="C++ for beginners" class="content__image">
-      <h2 class="content__heading">C++ for Beginners</h2>
-      <p class="content__description">
-        This covers the classic C++ introduction and also introduces the reader to the programming with C++.
-        This covers the classic C++ introduction and also introduces the reader to the programming with C++.
-        This covers the classic C++ introduction and also introduces the reader to the programming with C++.
-      </p>
-    </div>
-    <div class="content__container">
-      <img src="img/cpp_thumbnail.jpg"
-           alt="C++ for beginners" class="content__image">
-      <h2 class="content__heading">C++ for Beginners</h2>
-      <p class="content__description">
-        This covers the classic C++ introduction and also introduces the reader to the programming with C++.
-        This covers the classic C++ introduction and also introduces the reader to the programming with C++.
-        This covers the classic C++ introduction and also introduces the reader to the programming with C++.
-      </p>
-    </div>
-    <div class="content__container">
-      <img src="img/cpp_thumbnail.jpg"
-           alt="C++ for beginners" class="content__image">
-      <h2 class="content__heading">C++ for Beginners</h2>
-      <p class="content__description">
-        This covers the classic C++ introduction and also introduces the reader to the programming with C++.
-        This covers the classic C++ introduction and also introduces the reader to the programming with C++.
-        This covers the classic C++ introduction and also introduces the reader to the programming with C++.
-      </p>
-    </div>
-    <div class="content__container">
-      <img src="img/cpp_thumbnail.jpg"
-           alt="C++ for beginners" class="content__image">
-      <h2 class="content__heading">C++ for Beginners</h2>
-      <p class="content__description">
-        This covers the classic C++ introduction and also introduces the reader to the programming with C++.
-        This covers the classic C++ introduction and also introduces the reader to the programming with C++.
-        This covers the classic C++ introduction and also introduces the reader to the programming with C++.
-      </p>
-    </div>
-    <div class="content__container">
-      <img src="img/cpp_thumbnail.jpg"
-           alt="C++ for beginners" class="content__image">
-      <h2 class="content__heading">C++ for Beginners</h2>
-      <p class="content__description">
-        This covers the classic C++ introduction and also introduces the reader to the programming with C++.
-        This covers the classic C++ introduction and also introduces the reader to the programming with C++.
-        This covers the classic C++ introduction and also introduces the reader to the programming with C++.
-      </p>
+    <section>
+      <div class="carousel" data-carousel>
+        <button class="carousel__button carousel__button--prev" data-carousel-button="prev">&#8656;</button>
+        <button class="carousel__button carousel__button--next" data-carousel-button="next">&#8658;</button>
+        <ul data-slides>
+          <li class="carousel__slide" data-active>
+            <img src="img/long-1.jpg" alt="Nature Image #1">
+          </li>
+          <li class="carousel__slide">
+            <img src="img/long-2.jpg" alt="Nature Image #2">
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="recommendations" >
+      <h1 class="recommendation__title">Books recommendation for you</h1>
+      <div class="recommendation__container">
+        <div class="recommendation__book">
+          <img src="img/cs_thumbnail.jpg" alt="random pic" class="book__img">
+          <h3 class="book__title">This is a book title</h3>
+          <p class="book__authors">Chris Nolan, Mark J Price</p>
+          <div class="book__rating" style="--rating: 2.3;"
+               aria-label="Rating of this product is 2.3 out of 5.">
+          </div>
+        </div>
+
+        <div class="recommendation__book">
+          <img src="img/cs_thumbnail.jpg" alt="random pic" class="book__img">
+          <h3 class="book__title">This is a book title</h3>
+          <p class="book__authors">Chris Nolan, Mark J Price</p>
+          <div class="book__rating" style="--rating: 2.3;"
+               aria-label="Rating of this product is 2.3 out of 5.">
+          </div>
+        </div>
+
+        <div class="recommendation__book">
+          <img src="img/cs_thumbnail.jpg" alt="random pic" class="book__img">
+          <h3 class="book__title">This is a book title</h3>
+          <p class="book__authors">Chris Nolan, Mark J Price</p>
+          <div class="book__rating" style="--rating: 2.3;"
+               aria-label="Rating of this product is 2.3 out of 5.">
+          </div>
+        </div>
+
+        <div class="recommendation__book">
+          <img src="img/cs_thumbnail.jpg" alt="random pic" class="book__img">
+          <h3 class="book__title">This is a book title</h3>
+          <p class="book__authors">Chris Nolan, Mark J Price</p>
+          <div class="book__rating" style="--rating: 3.3;"
+               aria-label="Rating of this product is 2.3 out of 5.">
+          </div>
+        </div>
+
+        <div class="recommendation__book">
+          <img src="img/cs_thumbnail.jpg" alt="random pic" class="book__img">
+          <h3 class="book__title">This is a book title</h3>
+          <p class="book__authors">Chris Nolan, Mark J Price</p>
+          <div class="book__rating" style="--rating: 2.3;"
+               aria-label="Rating of this product is 2.3 out of 5.">
+          </div>
+        </div>
+
+        <div class="recommendation__book">
+          <img src="img/cs_thumbnail.jpg" alt="random pic" class="book__img">
+          <h3 class="book__title">This is a book title</h3>
+          <p class="book__authors">Chris Nolan, Mark J Price</p>
+          <div class="book__rating" style="--rating: 4.3;"
+               aria-label="Rating of this product is 2.3 out of 5.">
+          </div>
+        </div>
+
+        <div class="recommendation__book">
+          <img src="img/cs_thumbnail.jpg" alt="random pic" class="book__img">
+          <h3 class="book__title">This is a book title</h3>
+          <p class="book__authors">Chris Nolan, Mark J Price</p>
+          <div class="book__rating" style="--rating: 2.3;"
+               aria-label="Rating of this product is 2.3 out of 5.">
+          </div>
+        </div>
+
+        <div class="recommendation__book">
+          <img src="img/cs_thumbnail.jpg" alt="random pic" class="book__img">
+          <h3 class="book__title">This is a book title</h3>
+          <p class="book__authors">Chris Nolan, Mark J Price</p>
+          <div class="book__rating" style="--rating: 2.3;"
+               aria-label="Rating of this product is 2.3 out of 5.">
+          </div>
+        </div>
+
+        <div class="recommendation__book">
+          <img src="img/cs_thumbnail.jpg" alt="random pic" class="book__img">
+          <h3 class="book__title">This is a book title</h3>
+          <p class="book__authors">Chris Nolan, Mark J Price</p>
+          <div class="book__rating" style="--rating: 2.3;"
+               aria-label="Rating of this product is 2.3 out of 5.">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="expand_button">
+      Explore Community Feeds
     </div>
   </main>
 
   <footer class="footer">
-    footer
+    <div class="contact__container" >
+      <h4 class="contact">Contact Us</h4>
+      <ul>
+        <li>Facebook</li>
+        <li>Instagram</li>
+        <li>LinkedIn</li>
+        <li>Mail</li>
+      </ul>
+    </div>
   </footer>
 
-  <script src="sidebar.js"></script>
+  <script src="js/sidebar.js"></script>
+  <script src="js/carousel.js"></script>
 </div>
 </body>
 </html>
