@@ -1,0 +1,12 @@
+.header__actions {
+  display: flex;
+
+  .btn__signup {
+    margin-left: 2rem;
+    padding: 1rem 1.5rem;
+    transform: translateY(-.3rem);
+    border-radius: 30%;
+    outline: none;
+    border: none;
+  }
+}

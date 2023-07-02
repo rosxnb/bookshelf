@@ -1,20 +1,29 @@
-.expand_button {
-  padding: 1rem 1.5rem;
-  margin-top: 2rem;
-  background-color: $color-primary;
-  color: white;
-  width: fit-content;
-  height: fit-content;
-  position: absolute;
-  bottom: 5%;
-  left: 45%;
-  border-radius: 20rem;
-  font-size: 1.6rem;
-  font-weight: 500;
-  transition: scale .3s;
+.expand_button__container {
+    margin-top: 2rem;
+    width: 100vw;
+    height: fit-content;
+    // position: absolute;
+    // bottom: 5%;
+    // left: 45%;
+    display: flex;
+    justify-content: center;
+    transition: scale .3s;
 
-  &:hover {
-    cursor: pointer;
-    transform: scaleX(1.1) scaleY(1.2);
-  }
+    .expand_button {
+        width: fit-content;
+        height: fit-content;
+        background-color: $color-primary;
+        color: white;
+        font-size: 1.8rem;
+        font-weight: 500;
+        border-radius: 20rem;
+        padding: 1.3rem 1.8rem;
+        border: none;
+        box-shadow: 6px 4px 5px $color-grey-dark-2;
+    }
+
+    &:hover {
+        cursor: pointer;
+        transform: scaleX(1.1) scaleY(1.2);
+    }
 }
