@@ -1,29 +1,54 @@
 .footer {
-  background-color: $color-primary-dark;
-  grid-area: foot;
-  padding: 2rem;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+    background-color: $color-primary-dark;
+    grid-area: foot;
+    padding: 2rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .contact__container {
-  margin-left: 30rem;
+    margin-left: 30rem;
+    display: flex;
+    align-items: center;
 
-  .contact {
-    text-align: center;
-    color: $color-grey-light-1;
-    font-size: 1.8rem;
-    font-weight: 600;
-    font-family: sans-serif;
-  }
+    .contact {
+        text-align: center;
+        color: $color-grey-light-1;
+        font-size: 1.8rem;
+        font-weight: 600;
+        font-family: sans-serif;
+        text-transform: uppercase;
+        padding: 0 5rem;
+        margin-right: 5rem;
+    }
 
-  & ul {
-    color: $color-grey-light-1;
-    list-style-type: none;
-    font-size: 1.6rem;
-    font-weight: 400;
-    font-family: sans-serif;
-    text-transform: lowercase;
-  }
+    & ul {
+        color: $color-grey-light-1;
+        list-style-type: none;
+        font-size: 1.8rem;
+        font-weight: 400;
+        font-family: sans-serif;
+        display: flex;
+        align-items: center;
+        gap: 5rem;
+
+        a {
+            margin-left: 1rem;
+            text-decoration: none;
+            color: white;
+        }
+    }
+}
+
+.contact__icon {
+    width: 2rem;
+    height: 2rem;
+    fill: #B2D210FF;
+    transform: translateY(2px);
+
+    &--facebook { fill: #0d22db; }
+    &--instagram { fill: #f5ba0a; }
+    &--linkedin { fill: blue; }
+    &--mail { fill: #efefef; }
 }

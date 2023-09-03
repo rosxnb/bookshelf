@@ -1,12 +1,12 @@
 .homepage {
-  background-color: red;
-  width: 100vw;
-  height: 100vh;
+    background-color: red;
+    width: 100vw;
+    height: 100vh;
 
-  display: grid;
-  grid-template-rows: min-content 1fr auto;
-  grid-template-columns: max-content 1fr;
-  grid-template-areas: "head head"
-                       "side main"
-                       "foot foot";
+    display: grid;
+    grid-template-rows: min-content 1fr auto;
+    grid-template-columns: max-content 1fr;
+    grid-template-areas: "head head"
+                         "side main"
+                         "foot foot";
 }

@@ -1,0 +1,52 @@
+.product__container {
+    background-color: whitesmoke;
+    display: relative;
+    height: inherit;
+    background-color: inherit;
+    color: white;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 3rem;
+    padding: 5rem 5rem;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.product__info {
+    margin-left: 4rem;
+    display: flex;
+    flex-direction: column;
+    padding: 5rem 0;
+
+    .product__stats {
+        .product--title {
+            font-weight: 400;
+        }
+
+        .book__rating {
+            margin-left: -4.8rem;
+            font-size: 2.2rem;
+        }
+
+        .product--author {
+            font-style: italic;
+            font-size: 2.2rem;
+            margin-top: 1rem;
+            color: lighten($color: green, $amount: 9);
+        }
+
+        p {
+            font-size: 2.4rem;
+            color: darken($color: yellow, $amount: 5);
+        }
+    }
+
+    .product__summary {
+        margin-top: 2.5rem;
+        line-height: 1.4;
+        font-size: 2.8rem;
+        padding: 1rem 6rem 1rem 0;
+    }
+}
+

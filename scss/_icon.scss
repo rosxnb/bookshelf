@@ -1,26 +1,26 @@
 .logo {
-  &__container {
-    width: fit-content;
-    height: fit-content;
-    padding: 1.2rem 0;
-    position: relative;
-  }
+    &__container {
+        width: fit-content;
+        height: fit-content;
+        padding: 1.2rem 0;
+        position: relative;
+    }
 
-  &__icon {
-    aspect-ratio: 1;
-    width: 5rem;
-    object-fit: cover;
-    object-position: center;
-  }
+    &__icon {
+        aspect-ratio: 1;
+        width: 5rem;
+        object-fit: cover;
+        object-position: center;
+    }
 
-  &__text {
-    font-size: 1.6rem;
-    font-family: sans-serif;
-    font-weight: 600;
-    text-transform: uppercase;
-    position: absolute;
-    top: 35%;
-    left: 100%;
-    color: $color-grey-light-1;
-  }
+    &__text {
+        font-size: 1.6rem;
+        font-family: sans-serif;
+        font-weight: 600;
+        text-transform: uppercase;
+        position: absolute;
+        top: 35%;
+        left: 100%;
+        color: $color-grey-light-1;
+    }
 }

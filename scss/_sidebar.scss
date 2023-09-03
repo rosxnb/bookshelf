@@ -1,72 +1,72 @@
 .sidebar {
-  background-color: $color-primary;
-  grid-area: side;
-  padding-left: 2rem;
-  box-sizing: border-box;
-  position: relative;
+    background-color: $color-primary;
+    grid-area: side;
+    padding-left: 2rem;
+    box-sizing: border-box;
+    position: relative;
 }
 
 .navigation {
-  &__list {
-    list-style-type: none;
-  }
-
-  &__item {
-    margin: 1.5rem 0;
-    width: $sidenav-width;
-
-    &:hover, &:active, &:focus {
-      cursor: pointer;
-      background-color: lighten($color-primary-dark, .1);
-      .navigation__item--collapse {
-        visibility: visible;
-        opacity: 1;
-        width: $sidenav-width - $sidenav-icon-width;
-      }
+    &__list {
+        list-style-type: none;
     }
-  }
 
-  &__icon {
-    display: inline-block;
-    height: $sidenav-icon-width;
-    width: $sidenav-icon-width;
-    fill: $color-grey-light-1;
-    vertical-align: middle;
-    padding-right: .5rem;
-  }
+    &__item {
+        margin: 1.5rem 0;
+        width: $sidenav-width;
 
-  &__text {
-    text-transform: capitalize;
-    letter-spacing: 2px;
-    font-size: 1.4rem;
-    font-weight: 400;
-    width: 100%;
-    color: $color-grey-light-1;
-  }
-
-  &__item--collapse {
-    width: 0;
-    list-style-type: none;
-    position: absolute;
-    top: 0;
-    right: 0;
-    background-color: lighten($color-primary-dark, 0.7);
-    z-index: 10;
-    padding: .5rem 1rem;
-    visibility: hidden;
-    opacity: 0;
-    transition: width .3s ease;
-
-    & > li {
-      &:nth-child(1) {
-        padding-top: 1.2rem;
-      }
-
-      &:not(:nth-child(1)) {
-        padding-top: 2.2rem;
-      }
-
-      padding-left: 1.5rem
+        &:hover, &:active, &:focus {
+            cursor: pointer;
+            background-color: lighten($color-primary-dark, .1);
+            .navigation__item--collapse {
+                visibility: visible;
+                opacity: 1;
+                width: $sidenav-width - $sidenav-icon-width;
+            }
+        }
     }
-  }
+
+    &__icon {
+        display: inline-block;
+        height: $sidenav-icon-width;
+        width: $sidenav-icon-width;
+        fill: $color-grey-light-1;
+        vertical-align: middle;
+        padding-right: .5rem;
+    }
+
+    &__text {
+        text-transform: capitalize;
+        letter-spacing: 2px;
+        font-size: 1.4rem;
+        font-weight: 400;
+        width: 100%;
+        color: $color-grey-light-1;
+    }
+
+    &__item--collapse {
+        width: 0;
+        list-style-type: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: lighten($color-primary-dark, 0.7);
+        z-index: 10;
+        padding: .5rem 1rem;
+        visibility: hidden;
+        opacity: 0;
+        transition: width .3s ease;
+
+        & > li {
+            &:nth-child(1) {
+                padding-top: 1.2rem;
+            }
+
+            &:not(:nth-child(1)) {
+                padding-top: 2.2rem;
+            }
+
+            padding-left: 1.5rem
+        }
+    }
 }

@@ -1,41 +1,41 @@
 .search {
-  &__container {
-    width: 4rem;
-    height: 3rem;
-    border: 1px solid white;
-    border-radius: 2.5rem;
-    cursor: pointer;
-    transition: all 1s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+    &__container {
+        width: 4rem;
+        height: 3rem;
+        border: 1px solid white;
+        border-radius: 2.5rem;
+        cursor: pointer;
+        transition: all 1s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-  &__box {
-    background-color: transparent;
-    height: 100%;
-    display: none;
-    margin-left: .2rem;
-    flex: 1;
-    @include remove-border-outline;
-  }
+    &__box {
+        background-color: transparent;
+        height: 100%;
+        display: none;
+        margin-left: .2rem;
+        flex: 1;
+        @include remove-border-outline;
+    }
 
-  &__input {
-    color: black;
-    background-color: transparent;
-    font-weight: 400;
-    font-size: 1.6rem;
-    width: 100%;
-    height: 100%;
-    padding-left: 1rem;
-    @include remove-border-outline;
-  }
+    &__input {
+        color: black;
+        background-color: transparent;
+        font-weight: 400;
+        font-size: 1.6rem;
+        width: 100%;
+        height: 100%;
+        padding-left: 1rem;
+        @include remove-border-outline;
+    }
 
-  &__icon {
-    width: 2.6rem;
-    height: 2.6rem;
-    color: #07051a;
-  }
+    &__icon {
+        width: 2.6rem;
+        height: 2.6rem;
+        color: #07051a;
+    }
 }
 
 .search__container:hover {

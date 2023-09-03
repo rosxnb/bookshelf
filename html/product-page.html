@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,300i" rel="stylesheet">
+        <link rel="stylesheet" href="../css/style.css">
+        <title>Kitabs - Product Page</title>
+    </head>
+
+    <body>
+        <!-- <a href="html/product-page.html"> click me </a> -->
+        <div class="overlay">
+        </div>
+        <div class="signup__form">
+            <form action="">
+                <div>
+                    <label for="first-name">
+                        <span class="form__text">First name</span>
+                        <input class="form__input" type="text" id="first-name">
+                    </label>
+                </div>
+                <div>
+                    <label for="last-name">
+                        <span class="form__text">Last Name</span>
+                        <input class="form__input" type="text" id="last-name">
+                    </label>
+                </div>
+                <div>
+                    <label for="user-handle">
+                        <span class="form__text">User Handle</span>
+                        <input class="form__input" type="text" id="user-handle">
+                    </label>
+                </div>
+                <div>
+                    <label for="email">
+                        <span class="form__text">Email</span>
+                        <input class="form__input" type="email" id="email">
+                    </label>
+                </div>
+                <div>
+                    <button>Register</button>
+                </div>
+            </form>
+            <button class="signup__close">
+                <svg class="signup__close--btn">
+                    <use xlink:href="../img/sprite.svg#icon-cross"></use>
+                </svg>
+            </button>
+        </div>
+
+        <div class="homepage">
+            <aside class="sidebar">
+                <nav class="sidebar__navigation">
+                    <ul class="navigation__list">
+                        <li class="navigation__item">
+                            <svg class="navigation__icon">
+                                <use xlink:href="../img/sprite.svg#icon-open-book"></use>
+                            </svg>
+                            <span class="navigation__text">Read List</span>
+                            <ul class="navigation__item--collapse">
+                                <li><span class="navigation__text">Generic</span></li>
+                                <li><span class="navigation__text">Fictional</span></li>
+                                <li><span class="navigation__text">Fantasy</span></li>
+                                <li><span class="navigation__text">Knowledgeable</span></li>
+                            </ul>
+                        </li>
+
+                        <li class="navigation__item">
+                            <svg class="navigation__icon">
+                                <use xlink:href="../img/sprite.svg#icon-warning"></use>
+                            </svg>
+                            <span class="navigation__text">Watch List</span>
+                            <ul class="navigation__item--collapse">
+                                <li><span class="navigation__text">Posts</span></li>
+                                <li><span class="navigation__text">Books</span></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+
+            <header class="header">
+                <div class="logo__container">
+                    <img src="../img/bookshelf.png" alt="company-logo" class="logo__icon">
+                    <a href="../index.html" class="logo__text--link"><span class="logo__text">Bookshelf</span></a>
+                </div>
+
+                <div class="header__actions">
+                    <form action="" class="search__container">
+                        <label class="search__box">
+                            <input type="search" class="search__input" placeholder="Search..." required>
+                        </label>
+                        <svg class="search__icon">
+                            <use xlink:href="../img/sprite.svg#icon-magnifying-glass"></use>
+                        </svg>
+                    </form>
+
+                    <button class="btn__signup">Sign up</button>
+                </div>
+            </header>
+
+            <main class="context">
+                <div class="product__container">
+                    <div class="product__image">
+                        <img src="../img/cs_thumbnail.jpg" alt="random pic">
+                    </div>
+                    <div class="product__info">
+                        <div class="product__stats">
+                            <h3 class="product--title">C# 11 and .NET 7</h3>
+                            <div class="book__rating" style="--rating: 4.6;"
+                                aria-label="Rating of this product is 2.3 out of 5.">
+                            </div>
+                            <p class="product--author">Chris Nolan, Mark J Price</p>
+                            <p>Best selling book on C# and dotnet programming for beginners.</p>
+                        </div>
+                        <div class="product__summary">
+                            <p>
+                                The is the best selling book in amazon for the C# programming and getting started with dotnet programming.
+                                The author also have couple of other books related to this field and they are best reated too. Safe to say,
+                                you will be investing in good product and for betterment of you future and expansion of the knowledge.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            <footer class="footer">
+                <div class="contact__container" >
+                    <h4 class="contact">Contact Us</h4>
+                    <ul>
+                        <li>
+                            <svg class="contact__icon contact__icon--facebook">
+                                <use xlink:href="../img/sprite.svg#icon-facebook"></use>
+                            </svg>
+                            <a href="https://www.facebook.com/" target="blank">Facebook</a>
+                        </li>
+                        <li>
+                            <svg class="contact__icon contact__icon--instagram">
+                                <use xlink:href="../img/sprite.svg#icon-instagram"></use>
+                            </svg>
+                            <a href="https://www.instagram.com/" target="blank">Instagram</a>
+                        </li>
+                        <li>
+                            <svg class="contact__icon contact__icon--linkedin">
+                                <use xlink:href="../img/sprite.svg#icon-linkedin"></use>
+                            </svg>
+                            <a href="https://www.linkedin.com/" target="blank">LinkedIn</a>
+                        </li>
+                        <li>
+                            <svg class="contact__icon contact__icon--mail">
+                                <use xlink:href="../img/sprite.svg#icon-mail"></use>
+                            </svg>
+                            <a href="mailto: dummy@test.gmail.com" target="blank">Mail</a>
+                        </li>
+                    </ul>
+                </div>
+            </footer>
+
+            <script src="../js/sidebar.js"></script>
+            <script src="../js/carousel.js"></script>
+            <script src="../js/signup-form.js"></script>
+        </div>
+    </body>
+</html>
